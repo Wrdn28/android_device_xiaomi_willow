@@ -280,6 +280,10 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
     libion.vendor
 
+# Keyhandler
+PRODUCT_PACKAGES += \
+    KeyHandler
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
