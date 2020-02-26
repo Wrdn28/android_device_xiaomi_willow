@@ -190,6 +190,10 @@ PRODUCT_PACKAGES += \
 # EPPE
 TARGET_DISABLE_EPPE := true
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3.vendor \
