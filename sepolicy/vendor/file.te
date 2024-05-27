@@ -15,3 +15,5 @@ type per_boot_file, file_type, data_file_type, core_data_file_type;
 # FPS Info
 type sysfs_fps, sysfs_type, fs_type;
 
+# Torch
+type sysfs_torch, fs_type, sysfs_type;
