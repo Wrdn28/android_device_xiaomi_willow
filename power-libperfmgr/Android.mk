@@ -47,6 +47,5 @@ LOCAL_MODULE := android.hardware.power-service.xiaomi-libperfmgr
 LOCAL_INIT_RC := android.hardware.power-service.xiaomi-libperfmgr.rc
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
-LOCAL_VINTF_FRAGMENTS := android.hardware.power-service.xiaomi.xml
 
 include $(BUILD_EXECUTABLE)
