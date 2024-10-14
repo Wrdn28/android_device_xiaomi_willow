@@ -1395,7 +1395,7 @@ vendor/lib64/libcdsprpc.so|e7629a092ba6954c08305a4c8cc08d95313cc2aa
 vendor/lib64/libsysmon_cdsp_skel.so|8a951e039071107317e0e7541ff4df7ad35d87ad
 
 # Certificate Authority - from LA.UM.9.11.r1-04500-NICOBAR.0
--vendor/app/CACertService/CACertService.apk|a430eb051f565ff00f4d8d2aa2dd2a7c8c3bec90
+vendor/app/CACertService/CACertService.apk|a430eb051f565ff00f4d8d2aa2dd2a7c8c3bec90
 vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
 vendor/lib64/libcacertclient.so|69ae73b9be13507ff39398ac5813ad709b8b7c32
 vendor/lib64/libjnihelper.so|d3687f06782adc074a38b9ff3c1aacd57ec7a6e7
@@ -1408,7 +1408,7 @@ vendor/etc/charger_fstab.qti|8464c139d93f05e86ff9c9d31b3e8617b8d9476e
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|29b23be4f604282abf715f86aec9697175a9aaad
 
 # CNE - from LA.UM.9.11.r1-04500-NICOBAR.0
--vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|6e355ca21e53c8a84794f06e1057e62ff2df1a58
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|6e355ca21e53c8a84794f06e1057e62ff2df1a58
 vendor/bin/cnd|c0b9d490694edd6a10d2a56690c7606b2743c126
 vendor/etc/cne/mwqem.conf|c51d3893b86ab89fae218f3a92c4f9c18ea401a8
 vendor/etc/cne/profileMwqem.xml|947917691684584b7e2ddf3588cd6f8e99f3804f
@@ -1549,7 +1549,7 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|a4a1d0cb3aefad65f6566f6bc31dd70f
 # DRM - Widevine
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
@@ -1563,7 +1563,7 @@ vendor/lib/vendor.qti.hardware.dsp@1.0.so|f902e821229cd1fff50ebfba99b0a068cbf74a
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|410b328b24ebd9ec5de4d293f592a933a5a58a00
 
 # Fingerprint sensor
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
+vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/com.fingerprints.extension@2.0.so
@@ -1603,7 +1603,7 @@ vendor/bin/slim_daemon|8726b322f604dc468f01f62af6200666418b8707
 vendor/bin/xtra-daemon|8cb4027bca0868e14fe73c7b2c7af7bb2ddb0562
 vendor/bin/xtwifi-client|851bdaceadd0de8b78f9993e614854a9191af2f6
 vendor/bin/xtwifi-inet-agent|73eb9393ba634d805055eea3fbea64785063be4b
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
 vendor/lib/hw/vendor.qti.gnss@4.0-impl.so|1ce5c42394b7abdf31980c15c336d376d58b4027
 vendor/lib/libasn1cper.so|e5ab12d54d0f15aeb9c3392ebcd1b8c9839cb157
@@ -1807,7 +1807,7 @@ vendor/lib/libAlacSwDec.so|1d074a0415ee358cd13c981e35266cff4c6863ce
 vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
 vendor/lib/libFlacSwDec.so|01c7a51d93c2fe447e23c1210832b39b171393e3
 vendor/lib/libI420colorconvert.so|976e00c9e8966e4c7100099666846770d34f4153
--vendor/lib/libMpeg4SwEncoder.so|92698c2830156bbca6297ad599d9e0f916139f00
+vendor/lib/libMpeg4SwEncoder.so|92698c2830156bbca6297ad599d9e0f916139f00
 vendor/lib/libOmxAlacDecSw.so|150f1fee193918792a88797766ddf12d1a388efd
 vendor/lib/libOmxApeDecSw.so|f3e64e54808f57f146173532335ea45db1fb54f4
 vendor/lib/libOmxSwVdec.so|07fbe117dc1aa5b657981c50bd77e8fc1954f600
@@ -1823,7 +1823,7 @@ vendor/lib64/libAlacSwDec.so|9fbfad65ffca33e1ac480e9cb056467ac75a6d5a
 vendor/lib64/libApeSwDec.so|76d3cc02ca1c3cdc3c71e57dc6e53027d2bf3d37
 vendor/lib64/libFlacSwDec.so|002aa39927e75568efb81c7ae3a044c694babfc3
 vendor/lib64/libI420colorconvert.so|e2d682f83c8f55276836903aa7701ef201edcc83
--vendor/lib64/libMpeg4SwEncoder.so|46cca30c76db78d8c5d6b99c2c7e5a00c414bc4f
+vendor/lib64/libMpeg4SwEncoder.so|46cca30c76db78d8c5d6b99c2c7e5a00c414bc4f
 vendor/lib64/libOmxAlacDecSw.so|3ecf891368d0ad84903b792303ef841dc24f91c1
 vendor/lib64/libOmxApeDecSw.so|6ec15cb9a251a35e7f7d427dcf0b0e945825518f
 vendor/lib64/libOmxSwVdec.so|959de8d76e50a2f620252efd4ad2868168d29d57
@@ -1851,9 +1851,9 @@ vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service
 vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
@@ -1866,7 +1866,7 @@ vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
 # Neural-networks - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|b6f24c768a260cf98d2ece534807318529567fd2
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc|4b7f2c5f914f3eef38f19936c0a06efc09b5b28c
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
 vendor/lib64/libhexagon_nn_stub.so|6fdaffc1c9372c0e70bcd82f5d806162ca31c176
 vendor/lib64/unnhal-acc-adreno.so|fcc7574b2d6f686e28dae4e42c04ceef5e790c10
 vendor/lib64/unnhal-acc-common.so|e37d2113f99506f1de85902a0fdee0b443342942
@@ -2041,7 +2041,7 @@ vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql|a0603a5c46e8e
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql|4701219a79190995eda651e5c45e11c9b111a478
 
 # Radio - IMS - from LA.UM.9.11.r1-04500-NICOBAR.0
--vendor/app/IWlanService/IWlanService.apk|08472592f4a21ad806c487fc0c70c10bbe7c7ac2
+vendor/app/IWlanService/IWlanService.apk|08472592f4a21ad806c487fc0c70c10bbe7c7ac2
 vendor/bin/ims_rtp_daemon|7a37ba220953edf951d4aa4cba761289e7644bf6
 vendor/bin/imsdatadaemon|d84d92b26b0084772a0ff6d5e65abf0c90ce6ef2
 vendor/bin/imsqmidaemon|1bfd2e728aec5ab957a8bb2e4ac8bf31deb04da6
@@ -2537,7 +2537,7 @@ system_ext/lib64/vendor.qti.mstatservice@1.0.so|a4ba04062537c69b149a48295661b265
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|47ff9a1712950fc9f877691f2712d8aa7fcf3420
 
 # Time services - from LA.UM.9.11.r1-04500-NICOBAR.0
--vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
+vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
 vendor/bin/time_daemon|8e1a7f986859684240f226ffb2d94ea744966a2a
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|72cbb6847c67602904cf435d3878045a186c7ef5
