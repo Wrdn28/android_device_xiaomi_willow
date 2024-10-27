@@ -7,5 +7,3 @@ type lirc_prop, property_type;
 # Fingerprint
 type vendor_fp_prop, property_type;
 
-# Power HAL
-type vendor_power_prop, property_type;

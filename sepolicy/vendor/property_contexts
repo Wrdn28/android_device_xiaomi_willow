@@ -22,8 +22,5 @@ persist.vendor.fpc.         u:object_r:vendor_fp_prop:s0
 persist.sys.fp.             u:object_r:vendor_fp_prop:s0
 sys.vendor.fp.              u:object_r:vendor_fp_prop:s0
 
-# Power HAL
-vendor.powerhal.                   u:object_r:vendor_power_prop:s0
-
 # Fastbootd
 ro.fastbootd.available                  u:object_r:exported_default_prop:s0
