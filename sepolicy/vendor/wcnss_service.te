@@ -1,0 +1,6 @@
+allow vendor_wcnss_service vendor_shell_exec:file { execute_no_trans open };
+allow vendor_wcnss_service vendor_data_file:dir create_dir_perms;
+allow vendor_wcnss_service vendor_data_file:file create_file_perms;
+allow vendor_wcnss_service vendor_wifi_vendor_wpa_socket:dir create_dir_perms;
+allow vendor_wcnss_service vendor_wifi_vendor_wpa_socket:sock_file create_file_perms;
+allow vendor_wcnss_service rootfs:dir { open read write };
