@@ -67,7 +67,7 @@
 
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Wyczyść głośnik</string>
-    <string name="clear_speaker_summary">Odtwarza 60-sekundowy dźwięk, aby wyczyścić głośnik</string>
+    <string name="clear_speaker_summary">Odtwarza 30-sekundowy dźwięk, aby wyczyścić głośnik</string>
     <string name="clear_speaker_description">Uruchom to narzędzie raz lub dwa razy, jeśli Twój głośnik jest zablokowany przez kurz bądź pył. Ustaw maksymalną głośność.\n\nJeśli głośnik jest zablokowany mocniej, uruchom to narzędzie od 2 do 5 razy, potrząsając urządzeniem z głośnikiem skierowanym w dół.</string>
 
     <!-- Kcal settings -->
@@ -84,16 +84,4 @@
     <string name="reset_default_button_title">Przywróć domyślną konfigurację</string>
     <string name="reset_default_button_summary">Przywróć wszystkie konfiguracje tego ekranu</string>
     <string name="contrast_slider_title">Kontrast</string>
-    
-	<!-- Vibration -->
-    <string name="vibration_title">Zarządzanie wibracjami</string>
-    <string name="vibration_strength_title">Siła</string>
-    
-    <!-- LCD Features -->
-    <string name="lcd_features_title">Funkcje LCD</string>
-    <string name="lcd_features_summary">Tryb Podwyższonej Jasności, CABC</string>
-    <string name="lcd_hbm_title">Tryb Podwyższonej Jasności (HBM)</string>
-    <string name="lcd_hbm_tile_title">HBM</string>
-    <string name="lcd_cabc_title">Tryb CABC</string>
-    <string name="lcd_features_info">Tryb Podwyższonej Jasności (HBM) zwiększa maksymalną jasność wyświetlacza, aby poprawić widoczność w świetle słonecznym. Zwiększa zużycie energii.\n\nCABC (Adaptacyjna Kontrola Podświetlania Treści) dostosowuje jasność wyświetlacza i podświetlenia w oparciu o aktualnie wyświetlaną zawartość, aby zmniejszyć zużycie energii bez degradacji.</string>
 </resources>

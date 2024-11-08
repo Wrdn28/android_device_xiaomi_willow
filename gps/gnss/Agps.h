@@ -157,9 +157,9 @@ private:
 public:
     /* CONSTRUCTOR */
     AgpsStateMachine(AgpsManager* agpsManager, AGpsExtType agpsType):
-        mFrameworkStatusV4Cb(NULL),
         mAgpsManager(agpsManager), mSubscriberList(),
         mCurrentSubscriber(NULL), mState(AGPS_STATE_RELEASED),
+        mFrameworkStatusV4Cb(NULL),
         mAgpsType(agpsType), mAPN(NULL), mAPNLen(0),
         mBearer(AGPS_APN_BEARER_INVALID) {};
 
@@ -167,7 +167,7 @@ public:
 
     /* Getter/Setter methods */
     void setAPN(char* apn, unsigned int len);
-    inline char* getAPN() const { return (char*)mAPN; }
+    inline char* getAPN() const { return mAPN; }
     inline uint32_t getAPNLen() const { return mAPNLen; }
     inline void setBearer(AGpsBearerType bearer) { mBearer = bearer; }
     inline LocApnTypeMask getApnTypeMask() const { return mApnTypeMask; }

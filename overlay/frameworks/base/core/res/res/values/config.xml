@@ -164,9 +164,6 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
 
-    <!-- Make the default config as UNKNOWN so that Modem configurtion would be retained -->
-    <integer name="config_default_cellular_usage_setting">-1</integer>
-
     <!-- Is the device capable of hot swapping an ICC Card -->
     <bool name="config_hotswapCapable">true</bool>
 
@@ -564,14 +561,14 @@
          The user is forbidden from setting the brightness above this level. -->
     <integer name="config_screenBrightnessSettingMaximum">2047</integer>
 
+    <!-- Minimum screen brightness setting allowed by the power manager.
+         The user is forbidden from setting the brightness below this level. -->
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">1.0</item>
+
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
-    <!-- Minimum screen brightness setting allowed by the power manager.
-         The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">1</integer>
-	
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
          try to start this dream if possible.  The dream should typically call startDozing()
@@ -604,18 +601,6 @@
          provisioning, availability etc -->
     <bool name="config_carrier_wfc_ims_available">true</bool>
 
-    <!-- Whether to adopt the predefined handover policies for IWLAN.
-        {@see CarrierConfigManager#KEY_IWLAN_HANDOVER_POLICY_STRING_ARRAY}
-    -->
-    <bool name="config_enable_iwlan_handover_policy">false</bool>
-
-    <!-- Whether enhanced IWLAN handover check is enabled. If enabled, telephony frameworks
-        will not perform handover if the target transport is out of service, or VoPS not
-        supported. The network will be torn down on the source transport, and will be
-        re-established on the target transport when condition is allowed for bringing up a
-        new network. -->
-    <bool name="config_enhanced_iwlan_handover_check">false</bool>
-
     <!-- IWLAN data service package name to bind to by default. If none is specified in an overlay, an
          empty string is passed in -->
     <string name="config_wlan_data_service_package">vendor.qti.iwlan</string>
@@ -626,13 +611,6 @@
 
     <!-- Telephony qualified networks service package name to bind to by default. -->
     <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
-
-    <!-- Whether the always on display mode is available. -->
-    <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
-
-    <!-- Control whether the always on display mode is enabled by default. This value will be used
-         during initialization when the setting is still null. -->
-    <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
     <!-- If true, the doze component is not started until after the screen has been
 	          turned off and the screen off animation has been performed. -->
@@ -676,30 +654,6 @@
         <item>"evdo:4094,87380,524288,4096,16384,262144"</item>
     </string-array>
 
-    <!-- Configure tcp buffer sizes per network type in the form:
-         network-type:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
-         The network-type must be a valid DataConfigNetworkType value. If no value is found for the
-         network-type in use, config_tcp_buffers will be used instead.
-    -->
-    <string-array name="config_network_type_tcp_buffers">
-        <item>"NR_SA_MMWAVE:2097152,6291456,16777216,512000,2097152,8388608"</item>
-        <item>"NR_SA:2097152,6291456,16777216,512000,2097152,8388608"</item>
-        <item>"NR_NSA_MMWAVE:2097152,6291456,16777216,512000,2097152,8388608"</item>
-        <item>"NR_NSA:2097152,6291456,16777216,512000,2097152,8388608"</item>
-        <item>"LTE:2097152,4194304,8388608,262144,524288,1048576"</item>
-        <item>"LTE_CA:4096,6291456,12582912,4096,1048576,2097152"</item>
-        <item>"UMTS:4094,87380,1220608,4096,16384,1220608"</item>
-        <item>"HSPA:4094,87380,1220608,4096,16384,1220608"</item>
-        <item>"HSUPA:4094,87380,1220608,4096,16384,1220608"</item>
-        <item>"HSDPA:4094,87380,1220608,4096,16384,1220608"</item>
-        <item>"HSPA+:4094,87380,1220608,4096,16384,1220608"</item>
-        <item>"EDGE:4093,26280,35040,4096,16384,35040"</item>
-        <item>"GPRS:4092,8760,11680,4096,8760,11680"</item>
-        <item>"EvDo_0:4094,87380,524288,4096,16384,262144"</item>
-        <item>"EvDo_A:4094,87380,524288,4096,16384,262144"</item>
-        <item>"EvDo_B:4094,87380,524288,4096,16384,262144"</item>
-    </string-array>
-
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
 
@@ -723,18 +677,28 @@
 
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
-        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/system/bin/surfaceflinger"</item>
         <item>"/system/framework/framework.jar"</item>
         <item>"/system/framework/services.jar"</item>
         <item>"/system/framework/ext.jar"</item>
-        <item>"/system/lib64/libEGL.so"</item>
-        <item>"/system/lib64/libhwui.so"</item>
         <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
-        <item>"/vendor/lib64/egl/libGLESv2_adreno.so"</item>
-        <item>"/vendor/lib64/libgsl.so"</item>
-        <item>"/vendor/lib64/libllvm-qgl.so"</item>
+        <item>"/system/lib/libRScpp.so"</item>
+        <item>"/system/lib/libRS.so"</item>
+        <item>"/system/lib/libRS_internal.so"</item>
+        <item>"/system/lib/libbcinfo.so"</item>
+        <item>"/system/lib/libRSDriver.so"</item>
+        <item>"/system/lib/libRSCpuRef.so"</item>
+        <item>"/system/lib/libblas.so"</item>
+        <item>"/system/lib64/libRScpp.so"</item>
+        <item>"/system/lib64/libRS.so"</item>
+        <item>"/system/lib64/libRS_internal.so"</item>
+        <item>"/system/lib64/libbcinfo.so"</item>
+        <item>"/system/lib64/libRSDriver.so"</item>
+        <item>"/system/lib64/libRSCpuRef.so"</item>
+        <item>"/system/lib64/libblas.so"</item>
+        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
+        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
     </string-array>
 
     <!-- True if home app should be pinned via Pinner Service -->
@@ -768,6 +732,12 @@
         <item>22</item>
     </integer-array>
 
+    <!-- Whether or not the device is capable of multiple levels of vibration intensity.
+         Note that this is different from whether it can control the vibration amplitude as some
+         devices will be able to vary their amplitude but do not possess enough dynamic range to
+         have distinct intensity levels -->
+    <bool name="config_vibration_supports_multiple_intensities">true</bool>
+
     <!-- Boolean indicating if current platform supports HFP inband ringing -->
     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
 
@@ -775,6 +745,7 @@
     <integer-array name="config_availableColorModes">
         <item>0</item> <!-- COLOR_MODE_NATURAL -->
         <item>1</item> <!-- COLOR_MODE_BOOSTED -->
+        <item>2</item> <!-- COLOR_MODE_SATURATED  -->
         <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
 
@@ -799,11 +770,6 @@
     <string-array name="config_deviceDisabledComponents" translatable="false">
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
         <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
-        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
     </string-array>
 
     <!-- The default journal mode to use use when Write-Ahead Logging is not active.
@@ -841,61 +807,17 @@
          from DOZE to ON, in millis. -->
     <integer name="config_wakeUpDelayDoze">32</integer>
 
-    <!-- Maximum color temperature, in Kelvin, supported by Night display.
-         Setting this to track config_displayWhiteBalanceColorTemperatureDefault (currently 6500K). -->
-    <integer name="config_nightDisplayColorTemperatureMax">6500</integer>
-
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
-    
-    <!-- Does the battery LED support multiple colors?
-         Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">false</bool>
 
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+         Off by default, since the framebuffer readback used to implement the
+         fading edges is prohibitively expensive on most GPUs. -->
+    <bool name="config_ui_enableFadingMarquee">true</bool>
 
-    <!-- Do the battery/notification LEDs support pulsing?
-         Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">true</bool>
+    <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
+   <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
 
-    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
-    <bool name="config_cleanupUnusedFingerprints">false</bool>
-
-    <!-- Pocket Lock -->
-    <bool name="config_pocketModeSupported">true</bool>
-    <bool name="config_pocketUseLightSensor">true</bool>
-
-    <!-- LiveDisplay -->
-    <bool name="config_enableLiveDisplay">false</bool>
-
-    <!-- Whether to enable Lineage Health Service -->
-    <bool name="config_lineageHealthSupported">true</bool>
-
-    <!-- Default value for performant auth feature. -->
-    <bool name="config_performantAuthDefault">true</bool>
-
-    <!-- Default value for proximity check on screen wake
-     NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
-    <bool name="config_proximityCheckOnWake">true</bool>
-    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
-
-    <!-- Boost Framework -->
-    <bool name="config_supportsBoostFramework">true</bool>
-    
-    <!-- Flag indicating whether the surface flinger is inefficient
-         at performing a blur.  Used by parts of the UI to turn off
-         the blur effect where it isn't worth the performance hit.
-         As of Honeycomb, blurring is not supported anymore. -->
-    <bool name="config_sf_slowBlur">false</bool>
-    
-    <!-- Paths to the libraries that contain device specific key handlers -->
-    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
-        <item>/system/priv-app/KeyHandler/KeyHandler.apk</item>
-    </string-array>
-
-    <!-- Names of the key handler classes -->
-    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>me.waveproject.keyhandler.KeyHandler</item>
-    </string-array>
+    <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 </resources>

@@ -33,7 +33,7 @@
 /dev/socket/audio_hw_socket                                                          u:object_r:audio_socket:s0
 
 # Fingerprint
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.ginkgo u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.ginkgo u:object_r:hal_fingerprint_default_exec:s0
 
 # Fingerprint devices
 /dev/goodix_fp                                                                                 u:object_r:fingerprint_device:s0
@@ -50,3 +50,7 @@
 
 # Data files
 /data/per_boot(/.*)?                                                 u:object_r:per_boot_file:s0
+
+# FPS Info
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps    u:object_r:sysfs_fps:s0
+

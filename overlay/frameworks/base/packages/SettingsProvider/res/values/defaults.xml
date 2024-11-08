@@ -26,6 +26,7 @@
     <!-- Disable UI touch sounds by default -->
     <bool name="def_sound_effects_enabled">false</bool>
 
-    <!-- Enable vibrate for calls by default -->
-    <bool name="def_vibrate_when_ringing">true</bool>
+    <!-- Speed up the animations -->
+    <fraction name="def_window_transition_scale">50%</fraction>
+
 </resources>
