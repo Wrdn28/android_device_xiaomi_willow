@@ -247,6 +247,7 @@ WIFI_DRIVER_STATE_ON := "ON"
 QC_WIFI_HIDL_FEATURE_DUAL_AP := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/ginkgo/BoardConfigVendor.mk
