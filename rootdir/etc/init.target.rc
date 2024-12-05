@@ -118,7 +118,7 @@ on boot
     setprop kernel.sched_util_clamp_min_rt_default 500
     #top-app
     write /dev/cpuctl/top-app/cpu.uclamp.max max
-    write /dev/cpuctl/top-app/cpu.uclamp.min 40
+    write /dev/cpuctl/top-app/cpu.uclamp.min 25
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
 
     #foreground
