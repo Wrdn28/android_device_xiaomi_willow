@@ -11,44 +11,32 @@
     <item name="cpu.cluster_power.cluster0">12.10</item>
     <item name="cpu.cluster_power.cluster1">16.43</item>
     <array name="cpu.core_speeds.cluster0">
-        <value>300000</value>
-        <value>614400</value>
         <value>864000</value>
         <value>1017600</value>
         <value>1305600</value>
-        <value>1420800</value>
         <value>1612800</value>
         <value>1804800</value>
     </array>
     <array name="cpu.core_speeds.cluster1">
-        <value>300000</value>
-        <value>652800</value>
         <value>902400</value>
-        <value>1056000</value>
         <value>1401600</value>
         <value>1536000</value>
         <value>1804800</value>
         <value>2016000</value>
     </array>
     <array name="cpu.core_power.cluster0">
-        <value>4.2</value>
-        <value>8.28</value>
-        <value>11.99</value>
-        <value>15.06</value>
-        <value>23.81</value>
-        <value>27.99</value>
-        <value>38.22</value>
-        <value>51.99</value>
+        <value>10</value>
+        <value>20</value>
+        <value>30</value>
+        <value>40</value>
+        <value>50</value>
     </array>
     <array name="cpu.core_power.cluster1">
-        <value>11.06</value>
-        <value>23.81</value>
-        <value>35.09</value>
-        <value>44.08</value>
-        <value>73.08</value>
-        <value>87.18</value>
-        <value>134.31</value>
-        <value>192.47</value>
+        <value>25</value>
+        <value>35</value>
+        <value>50</value>
+        <value>60</value>
+        <value>70</value>
     </array>
     <item name="screen.on.display0">82.45</item>
     <item name="screen.full.display0">242.93</item>
