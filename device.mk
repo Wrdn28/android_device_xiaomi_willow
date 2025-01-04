@@ -216,7 +216,7 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor \
     libhidlmemory.vendor \
-    fastcharge.sh 
+    fastcharge.sh
 
 # IMS
 PRODUCT_PACKAGES += \
