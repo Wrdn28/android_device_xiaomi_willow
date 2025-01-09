@@ -295,7 +295,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
-# Media
+# Media configs
+PRODUCT_PACKAGES += \
+    media_codecs_c2.xml \
+    media_codecs_performance_c2.xml \
+
+# OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libmm-omxcore \
