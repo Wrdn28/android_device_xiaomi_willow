@@ -132,8 +132,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.qti.hardware.memtrack-service \
-    gralloc.trinket \
-    hwcomposer.trinket \
+    hwcomposer.qcom \
+    gralloc.qcom \
     libdisplayconfig.qti \
     libtinyxml \
     libtinyxml2 \
