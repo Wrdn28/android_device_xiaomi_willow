@@ -30,6 +30,7 @@ $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 AFTERLIFE_MAINTAINER := Hirokixd
+WITH_GMS := false
 
 # Device identifier
 PRODUCT_NAME := afterlife_ginkgo
