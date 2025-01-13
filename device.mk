@@ -358,6 +358,12 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
+# Partitions
+PRODUCT_PACKAGES += \
+    vendor_bt_firmware_mountpoint \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
