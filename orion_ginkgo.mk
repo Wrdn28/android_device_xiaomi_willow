@@ -27,7 +27,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some Lineage common stuff
 ORION_MAINTAINER := Hirokixd
-ORION_GAPPS := true
+ORION_MAINTAINER_LINK := https://t.me/Hirokixd28
+ORION_BUILD_TYPE := Official
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
 
 # Device identifier
 PRODUCT_NAME := orion_ginkgo
