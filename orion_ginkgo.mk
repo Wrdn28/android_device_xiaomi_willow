@@ -26,8 +26,10 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some Lineage common stuff
-ORION_MAINTAINER := Hirokixd
-ORION_GAPPS := true
+ORION_MAINTAINER := HK & MN
+ORION_MAINTAINER_LINK := https://t.me/OrionOS_Update
+ORION_BUILD_TYPE := Official
+ORION_GAPPS := false
 
 # Device identifier
 PRODUCT_NAME := orion_ginkgo
