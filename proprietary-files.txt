@@ -1342,13 +1342,13 @@ vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
 # Camera provider
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib/android.hardware.camera.provider@2.4-legacy-ginkgo.so
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
 vendor/lib/camera.device@3.4-impl.so
 vendor/lib/camera.device@3.5-impl.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy-ginkgo.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
 vendor/lib64/camera.device@3.3-impl.so
@@ -1386,6 +1386,10 @@ vendor/lib/libmmcamera_ginkgo_s5kgm1_ofilm_ii.so
 vendor/lib/libmmcamera_ginkgo_s5kgm1_ofilm_ii_eeprom.so
 vendor/lib/libmmcamera_ginkgo_s5kgm1_sunny_i.so
 vendor/lib/libmmcamera_ginkgo_s5kgm1_sunny_i_eeprom.so
+
+# Camera Potrait IDs
+vendor/lib/libgrallocutils.so
+vendor/lib64/libgrallocutils.so
 
 # CDSP - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
