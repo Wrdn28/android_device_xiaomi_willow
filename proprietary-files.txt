@@ -146,13 +146,14 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|2816cf7ede31f13cc041ab5423
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|6fe1aed00cd77677706cd6c62f08a2e591ab0608
 
 # Camera
-vendor/lib/hw/camera.trinket.so;DISABLE_DEPS
+vendor/lib/hw/camera.trinket.so
 vendor/lib/libSNPE.so
 vendor/lib/libVDClearShot.so
 vendor/lib/libVDSuperPhotoAPI.so
 vendor/lib/lib_lowlight.so
 vendor/lib/libalCFR.so
 vendor/lib/libalLDC.so
+vendor/lib/libalhLDC.so
 vendor/lib/libalRnBRT_GL_GBWRAPPER.so
 vendor/lib/libcamera_scene.so
 vendor/lib/libc++_shared.so
