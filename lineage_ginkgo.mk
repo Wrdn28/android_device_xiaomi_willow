@@ -25,14 +25,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit some Lineage common stuff
-ORION_MAINTAINER := HK & MN
-ORION_MAINTAINER_LINK := https://t.me/OrionOS_Update
-ORION_BUILD_TYPE := Official
-ORION_GAPPS := false
-
 # Device identifier
-PRODUCT_NAME := orion_ginkgo
+PRODUCT_NAME := lineage_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
