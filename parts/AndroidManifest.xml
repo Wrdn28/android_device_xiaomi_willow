@@ -47,7 +47,6 @@
             android:label="@string/device_settings_title"
             android:exported="false"
             android:icon="@drawable/ic_device_settings"
-	    android:exported="true"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,7 +66,7 @@
 
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
-	    android:exported="true"
+            android:exported="false" 
             android:label="@string/clear_speaker_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -88,7 +87,7 @@
 
         <activity
             android:name=".display.KcalSettingsActivity"
-	    android:exported="true"
+            android:exported="false"
             android:label="@string/kcal_settings_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -99,7 +98,7 @@
         <activity
             android:name=".display.LcdFeaturesPreferenceActivity"
             android:label="@string/lcd_features_title"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -135,7 +134,7 @@
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
