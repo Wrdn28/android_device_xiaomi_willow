@@ -52,18 +52,14 @@ function lib_to_package_fixup_vendor_variants() {
             com.qualcomm.qti.uceservice@2.0 | \
             com.qualcomm.qti.uceservice@2.1 | \
             libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so | \
-            vendor.qti.hardware.data.cne.internal.api@1.0 | \
-            vendor.qti.hardware.data.cne.internal.constants@1.0 | \
-            vendor.qti.hardware.data.cne.internal.server@1.0 | \
-            vendor.qti.hardware.data.connection@1.0 | \
-            vendor.qti.hardware.data.connection@1.1 | \
-            vendor.qti.hardware.data.dynamicdds@1.0 | \
-            vendor.qti.hardware.data.iwlan@1.0 | \
-            vendor.qti.hardware.data.qmi@1.0 | \
+            vendor.qti.hardware.data.* | \
+            vendor.qti.latency* | \
             vendor.qti.hardware.fm@1.0 | \
             vendor.qti.ims.callinfo@1.0 | \
             vendor.qti.ims.rcsconfig@1.0 | \
-            vendor.qti.ims.rcsconfig@1.1)
+            vendor.qti.ims.rcsconfig@1.1 | \
+            vendor.qti.imsrtpservice@3.0 | \
+            vendor.dolby.hardware.dms@2.0)
             echo "${1}_vendor"
             ;;
             libgrallocutils | \
