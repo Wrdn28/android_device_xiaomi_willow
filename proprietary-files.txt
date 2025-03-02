@@ -146,7 +146,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|2816cf7ede31f13cc041ab5423
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|6fe1aed00cd77677706cd6c62f08a2e591ab0608
 
 # Camera
-vendor/lib/hw/camera.trinket.so
+vendor/lib/hw/camera.trinket.so;DISABLE_DEPS
 vendor/lib/libSNPE.so
 vendor/lib/libVDClearShot.so
 vendor/lib/libVDSuperPhotoAPI.so
@@ -1599,7 +1599,7 @@ vendor/lib64/liblbs_core.so|4cb19a59560074920f3c45d1d0e84c67028646a9
 vendor/lib64/libloc_api_v02.so|0a21ed64f46e4a208f46595c97c1c65830bf859c
 vendor/lib64/libloc_api_wds.so|d359c51a23fa6706c979547196086a816aeeb556
 vendor/lib64/libloc_qwes_iface.so|e2d2d16163ca33ae11bffd63893a151d09f710f1
-vendor/lib64/libloc_ril_client.so|49cdc0200323e081c2a2ba4763a8e7d4f4826ead
+vendor/lib64/libloc_ril_client.so;DISABLE_DEPS|49cdc0200323e081c2a2ba4763a8e7d4f4826ead
 vendor/lib64/libloc_socket.so|d5ce9f5403a34fb826b86fe68e9b07f64bfabcab
 vendor/lib64/liblocationservice.so|f71e388d1d3252ac89ec669ee6850e8ac2ec27b1
 vendor/lib64/liblocationservice_glue.so|afc93b3326dfafbdce6a35085cbea9454190d5d0
@@ -1799,9 +1799,6 @@ vendor/lib64/libhexagon_nn_stub.so|6fdaffc1c9372c0e70bcd82f5d806162ca31c176
 vendor/lib64/unnhal-acc-adreno.so|fcc7574b2d6f686e28dae4e42c04ceef5e790c10
 vendor/lib64/unnhal-acc-common.so|e37d2113f99506f1de85902a0fdee0b443342942
 vendor/lib64/unnhal-acc-hvx.so|00eb79608cb6e3f19eaf9389632fdbfa03b2df62
-
-# NFC - from LA.UM.9.11.r1-04500-NICOBAR.0
-vendor/lib/libsn100u_fw.so|2bc1887b71b4557b75e26465f6917525bfd43e4a
 
 # Peripheral manager - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/pm-proxy|6cfaaf498d9360af9d7c9e4675a1dc209454fe24
