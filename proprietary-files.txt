@@ -1533,6 +1533,7 @@ vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib64/libhdcpsrm.so
+vendor/lib/libQSEEComAPI.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
@@ -1554,7 +1555,7 @@ vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
-vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so
 
 # FM - from LA.UM.9.11.r1-04500-NICOBAR.0
 system_ext/lib/fm_helium.so|89b1d540475352172eac7265c97aba55d93c150e
@@ -1595,11 +1596,9 @@ vendor/lib/libcdfw.so|886898c32e9df9eddd195e4f6992595b84fc1ada
 vendor/lib/libcdfw_remote_api.so|9f5176692b83abb7d45de90dc4bad75ecb2f682c
 vendor/lib/libdataitems.so|5c2bd6bda39483fe8419e93d74b273a8b9a5c601
 vendor/lib/libgarden.so|37e87c3c1fe317827c19e22b060e6277f02b3680
-vendor/lib/libgdtap.so|d7593999644baf0afe13d70350f116a96d17ce1d
 vendor/lib/libgnsspps.so|3708ca52e7fafe8364f2daef10c3614fcd824168
 vendor/lib/libizat_client_api.so|29323e67079e506713fd4c16fbcddf49c3046a7c
 vendor/lib/libizat_core.so|d113e67482fe6d9223b13b404823093d0a8406a8
-vendor/lib/liblbs_core.so|4928910fc6d1e048196b1b1862fd676c38596efa
 vendor/lib/libloc_api_v02.so|adc64e0fea39767c917dc9d824391c2239e584e4
 vendor/lib/libloc_socket.so|43e6923a37c97f0c5077238d95734b442ce19e81
 vendor/lib/liblocationservice.so|982e2296d40d23bb683e23de73a4ea35338bf7c7
@@ -1641,7 +1640,6 @@ vendor/lib64/liblocationservice.so|7ad17686137f6e08b009bb6e528d32bd8c2c3045
 vendor/lib64/liblocationservice_glue.so|75cd9570f1abc09894e90d676cf195dee3ee042a
 vendor/lib64/liblowi_client.so|8b247d7e693ddda7e0291e7ea5072fe9ce7b3c77
 vendor/lib64/liblowi_wifihal.so|3ac70a10fe72230ccb0edf1827b7cabee104c0da
-vendor/lib64/libminksocket.so|103f45603bef0d1fbf52ccdf8458dd31cabe3945
 vendor/lib64/libqcc_file_agent.so|cd70ce305d5036a027060aa989b0dcbcfab8edb6
 vendor/lib64/libslimclient.so|71210efca9cb66fffc4764acfdffb2f79a21d9e5
 vendor/lib64/libsynergy_loc_api.so|3e5cb8b6b566390a409c644fccd933ff128b6d21
@@ -1791,7 +1789,6 @@ vendor/lib64/libqcodec2.so|ebcb7ae53c292d689b57450120e280c5797cfaa1
 
 # Media - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/lib/libI420colorconvert.so|976e00c9e8966e4c7100099666846770d34f4153
-vendor/lib/libOmxVideoDSMode.so|979e5cb96260c8fa60eb55825a2a22273f524c65
 vendor/lib/libmm-color-convertor.so|22d7b8f77d0f19826743206d79bdf9a6a8c9e18f
 vendor/lib/libmmosal.so|a2203f5be5dc1ee10d2f5da8f167a46acb0a660e
 vendor/lib/vendor.qti.hardware.vpp@1.1.so|d3390ff80287d5b5455391315710e09a9fa916e3
@@ -1825,6 +1822,9 @@ vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
 vendor/lib64/libcheckpid.so
 vendor/lib64/liblogwrap_vendor.so
+vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
+vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
 
 # Neural-networks - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|b6f24c768a260cf98d2ece534807318529567fd2
@@ -1865,6 +1865,9 @@ vendor/lib/libsoc_helper.so|d1eba05bf1d235a7615e8d869afd5523ac78a1c4
 vendor/lib/libsoc_helper_jni.so|33bcdab1220cf460d5e2b10b8793ab21ff14fa94
 vendor/lib64/libsoc_helper.so|1b68d93bc41b403bfcca28828f3b9dfd2b794fef
 vendor/lib64/libsoc_helper_jni.so|593bb46e8bfaacb82a67231c64e82a7fa6d5c608
+
+# QMI - from RKQ1.201004.002 V12.5.2.0.RCOMIXM release-keys
+vendor/lib/libqmi_legacy.so
 
 # QMI (Qualcomm MSM Interface) - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/irsc_util|814c4956bb6fb7098bc89a8feb27547268cf8dde
