@@ -72,6 +72,7 @@ on late-fs
     wait_for_prop hwservicemanager.ready true
     exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.qcom --late
+    start vendor.light-default
 
 service sec_nvm /vendor/bin/sec_nvm
     class core
