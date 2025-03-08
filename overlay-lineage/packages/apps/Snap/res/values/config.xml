@@ -12,14 +12,6 @@
      limitations under the License.
 -->
 <resources>
-    <string-array name="configs_base">
-        <!-- ART heap compaction for cached apps -->
-        <item>activity_manager/use_compaction=true</item>
-
-        <!-- Allow more cached apps in the background -->
-        <item>activity_manager/max_cached_processes=64</item>
-    </string-array>
-
 <!-- Camera app resources that may need to be customized
      for different hardware or product builds. -->
     <!-- Enable support for camera api v2 -->

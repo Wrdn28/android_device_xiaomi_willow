@@ -20,13 +20,4 @@
         <!-- Allow more cached apps in the background -->
         <item>activity_manager/max_cached_processes=64</item>
     </string-array>
-
-    <!-- Enable support for camera api v2 -->
-    <bool name="support_camera_api_v2">true</bool>
-
-    <!-- Opens back camera using openLegacy() and forces api v1 -->
-    <bool name="back_camera_open_legacy">false</bool>
-
-    <!-- Opens front camera using openLegacy() and forces api v1 -->
-    <bool name="front_camera_open_legacy">false</bool>
 </resources>
