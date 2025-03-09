@@ -94,7 +94,7 @@ USE_OPENGL_RENDERER := true
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/horizon/config/device_framework_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/hidl/manifest.xml \
@@ -185,7 +185,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Reserved
-include vendor/lineage/config/BoardConfigReservedSize.mk
+include vendor/horizon/config/BoardConfigReservedSize.mk
 
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware \
